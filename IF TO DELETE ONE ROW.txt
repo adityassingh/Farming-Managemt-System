@@ -1,0 +1,4 @@
+set @autoid :=0; 
+update employee set id = @autoid := (@autoid+1);
+alter table employee Auto_Increment = 1;
+
